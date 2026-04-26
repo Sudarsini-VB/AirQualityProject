@@ -1,79 +1,158 @@
 # 🌍 AI Air Quality + BI Analyst Intelligence System
 
-🔗 Live App: https://airqualityproject-ts4tpyltpkpsdhhemvuzuz.streamlit.app/
+🔗 Live App: https://airqualityproject-faqvocetvzeh3sw4xeutpu.streamlit.app/
 
 ---
 
 ## 📌 Overview
-An AI-powered data analytics and air quality intelligence system that performs **end-to-end data science workflow** — from data ingestion to insights, visualization, and basic prediction.
+An AI-powered interactive system that performs **end-to-end data analysis, visualization, and intelligent insights** for air quality datasets.
 
-This project simulates how a **real data analyst + ML system** works on environmental datasets.
+The application combines **AQI evaluation + BI dashboard + data science workflow** into a single platform, enabling users to explore pollution data like a professional data analyst.
 
 ---
 
 ## 🚀 Features
 
-### 🔢 AQI Checker
-- Instant AQI classification
-- Health advisory system
-- Visual AQI scale indicator
+### 🔢 AQI Checker (Interactive UI)
+- Real-time AQI input using slider
+- Instant classification (Good → Severe)
+- Health advisory based on AQI level
+- Visual AQI scale (progress indicator)
+- Clean UI with dynamic feedback
 
-### 📊 BI Data Analyst Mode
-- Dataset upload (CSV)
-- Automated data profiling
-- KPI dashboard (Avg, Max, Risk Level)
-- Outlier detection (IQR method)
-- Anomaly detection (statistical deviation)
-- Trend analysis (rolling average)
-- Regional comparison (best vs worst locations)
-- Correlation analysis
-- Downloadable processed dataset
+---
+
+### 📊 BI Data Analyst Mode (Full Automation)
+
+#### 📌 Dataset Understanding
+- Auto-detects dataset structure (rows, columns)
+- Identifies location columns (City/State/Station)
+- Displays meaning of pollution parameters:
+  - PM2.5, PM10 → Particulate matter
+  - NO2 → Vehicle emissions
+  - SO2 → Industrial pollution
+  - CO → Carbon monoxide
+  - O3 → Ozone
+  - WS → Wind speed
+
+---
+
+#### 🎛 Dynamic Filters (Interactive)
+- Year filter (auto-generated from dataset)
+- Date range filter (if date column exists)
+- Metric selector (user selects any column)
+- Fully interactive dashboard (updates instantly)
+
+---
+
+#### 📊 KPI Dashboard
+- Average value
+- Maximum value
+- Minimum value
+- Dynamic based on selected metric
+
+---
+
+#### 📈 Interactive Data Visualization
+- Rolling mean trend (smoothed analysis)
+- Expandable full dataset view
+- Column-based visualization (user-controlled)
+- Auto-updates when filters change
+
+---
+
+#### ⚠️ Outlier Detection
+- IQR-based statistical method
+- Detects extreme values/spikes
+- Displays abnormal data points
+
+---
+
+#### 🧠 Anomaly Detection
+- Standard deviation-based detection
+- Identifies unusual patterns in data
+
+---
+
+#### 🏙 Region Analysis
+- Auto-detects location column
+- Shows:
+  - Worst regions (high pollution)
+  - Best regions (low pollution)
+- Bar chart visualization for comparison
+
+---
+
+#### 🔥 Correlation Analysis
+- Heatmap showing relationships between variables
+- Helps identify pollution dependencies
+
+---
+
+#### 🧠 AI Insights Engine
+- Automatically interprets dataset
+- Detects:
+  - High pollution patterns
+  - Urban/industrial impact
+  - Risk levels
+- Highlights worst affected region
+
+---
+
+#### 📊 Overall Dataset Insight
+- Displays full dataset trend (without filters)
+- Helps compare filtered vs overall data
+
+---
+
+#### 📥 Export Feature
+- Download filtered dataset as CSV
+- Useful for reporting and further analysis
 
 ---
 
 ## 🧠 Data Science Workflow Implemented
 
 ### 1. Data Collection
-- Input via CSV upload (real-world air quality datasets)
+- User uploads real-world dataset (CSV)
 
 ### 2. Data Cleaning
-- Column standardization
-- Handling missing values using median imputation
+- Column normalization
+- Missing value handling (median imputation)
 
 ### 3. Data Preprocessing
-- Filtering numeric features
-- Feature extraction (if date columns exist)
-- Data type handling
+- Numeric feature extraction
+- Date feature engineering (Year, Month)
+- Data filtering
 
 ### 4. Exploratory Data Analysis (EDA)
 - Statistical summaries
 - Trend visualization
 - Correlation matrix
-- Distribution understanding
 
 ### 5. Feature Engineering
-- Derived metrics (average index, risk levels)
-- Regional aggregation
-- Rolling averages for time trends
+- Rolling averages for smoothing
+- Aggregation by region
+- Derived KPIs
 
-### 6. Anomaly Detection
-- IQR-based outlier detection
-- Standard deviation-based anomaly detection
+### 6. Outlier & Anomaly Detection
+- IQR method
+- Standard deviation method
 
 ### 7. Insight Generation
-- AI-based rule engine for pollution interpretation
-- Identification of high-risk zones
-- Pattern-based reasoning
+- Rule-based AI interpretation
+- Pollution reasoning
+- Risk classification
 
 ---
 
-## 🤖 Machine Learning Logic (Basic)
+## 🤖 Machine Learning Logic (Lightweight)
 
-- **Trend Forecasting**: Rolling mean used for next-value approximation
-- **Risk Classification**: Rule-based AQI categorization
-- **Pattern Detection**: Statistical anomaly detection
+- Trend smoothing using rolling mean
+- Statistical anomaly detection
+- Rule-based classification (AQI levels)
 
-*(Lightweight ML logic designed for real-time interaction)*
+Designed for **real-time performance and interactivity**
 
 ---
 
@@ -83,6 +162,7 @@ This project simulates how a **real data analyst + ML system** works on environm
 - Pandas
 - NumPy
 - Matplotlib
+- Seaborn
 
 ---
 
